@@ -6,7 +6,7 @@ class App < Sinatra::Base  get '/' do
 
   post '/piglatinize' do
    
-    erb :results
+   erb :results
   end
   
 end
