@@ -2,7 +2,7 @@ require 'pry'
 class PigLatinizer
 
   def piglatinize(word) #word = "pork"
-   piglatinize_vowels(word)
+   piglatinize_word(word)
   end
   
   
