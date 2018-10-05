@@ -24,7 +24,7 @@ class PigLatinizer
         else
        word # return unchanged
       end
-  end
+   end
 
   end
   # def sentence(sentence)
