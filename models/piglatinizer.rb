@@ -15,7 +15,6 @@ class PigLatinizer
     if !consonants(char)
       char = char + 'w'
     end
-
   end
   
   def piglatinize_consonants(char)
