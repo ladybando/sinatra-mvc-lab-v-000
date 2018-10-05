@@ -14,7 +14,7 @@ class PigLatinizer
     binding.pry
     if !consonants(char)
       char = char + w
-    #char.split(//).slice(0)
+    #char.split(//).slice(0).join("")
   end
   
   def piglatinize_consonants(char)
