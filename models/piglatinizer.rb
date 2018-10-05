@@ -11,7 +11,7 @@ class PigLatinizer
     consonants = alpha - vowels
   
       if vowels.include?(word[0])
-        word + 'way'
+        word + 'w'
         elsif consonants.include?(word[0]) && consonants.include?(word[1])
           word[2..-1] + word[0..1] + 'ay'
           elsif consonants.include?(word[0])
