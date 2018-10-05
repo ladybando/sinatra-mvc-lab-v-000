@@ -4,9 +4,14 @@ class PigLatinizer
   def piglatinize(word) #word = "pork"
    piglatinize_vowels(word)
   end
-
+  
+  
+  def consonants(char)
+    !char.match(/a e i o u/).downcase
+  end
   def piglatinize_vowels(char) #char = "pork"
     binding.pry
+    char.split(//).slice(0)
   end
   
   def piglatinize_consonants(char)
