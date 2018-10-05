@@ -17,7 +17,7 @@ class PigLatinizer
     elsif consonants(char[0..1])
     binding.pry
     else 
-    char.concat(char.slice!(/^[^aeiou]*/i || ""))
+      char.concat(char.slice!(/^[^aeiou]*/i || ""))
     #char.concat(char.split(//).slice)
     end
     #char.split(//).slice(0).join(""),downcase #removes first letter and downcases it
