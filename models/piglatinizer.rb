@@ -9,8 +9,7 @@ class PigLatinizer
     alpha = ('a'..'z').to_a
     vowels = %w[a e i o u]
     consonants = alpha - vowels
-    binding.pry
-  
+   
     if vowels.include?(word[0].downcase)
       word + 'way'
       elsif consonants.include?(word[0].downcase) && consonants.include?(word[1].downcase) && consonants.include?(word[2].downcase)
