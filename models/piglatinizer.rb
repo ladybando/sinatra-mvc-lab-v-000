@@ -21,7 +21,7 @@ class PigLatinizer
       else
         word
       end
-   end
+  end
 
    def sentence(sentence)
      sentence.split.collect { |word| piglatinize_word(word) }.join(" ")
