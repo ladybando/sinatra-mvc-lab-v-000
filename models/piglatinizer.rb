@@ -19,8 +19,8 @@ class PigLatinizer
           word[2..-1] + word[0..1] + 'ay'
           elsif consonants.include?(word[0].downcase)
             word[1..-1] + word[0] + 'ay'
-        else
-          word
+            else
+              word
     end
    end
 
