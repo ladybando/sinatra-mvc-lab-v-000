@@ -12,7 +12,7 @@ class PigLatinizer
   
   def piglatinize_vowels(char) #char = "pork"
     binding.pry
-    if consonants(char)
+    if !consonants(char)
     char.split(//).slice(0)
   end
   
