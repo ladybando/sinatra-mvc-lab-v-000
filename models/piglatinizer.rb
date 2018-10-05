@@ -12,7 +12,7 @@ class PigLatinizer
     binding.pry
   
       if vowels.include?(word[0])
-        word + 'w'
+        word + 'way'
         elsif consonants.include?(word[0]) && consonants.include?(word[1])
           word[2..-1] + word[0..1] + 'ay'
           elsif consonants.include?(word[0])
