@@ -11,16 +11,21 @@ class PigLatinizer
   end
   
   def piglatinize_word(word) #char = "pork"
-   binding.pr
-    if !consonants(word[0])
-      word = word + 'w'
-    elsif consonants(word[0..1])
-    #binding.pry
-    else 
-      word.concat(word.slice!(/^[^aeiou]*/i || ""))
-    end
-    #char.split(//).slice(0).join(""),downcase #removes first letter and downcases it
-    #will join first two letters with .join
+  alpha = ('a'..'z').to_a
+  vowels = %w[a e i o u]
+  consonants = alpha - vowels
+
+  if vowels.include?(word[0])
+    word + 'way'
+  elsif consonants.include?(word[0]) && consonants.include?(word[1])
+    word[2..-1] + word[0..1] + 'ay'
+  elsif consonants.include?(word[0])
+    word[1..-1] + word[0] + 'ay'
+  else
+   word # return unchanged
+  end
+end
+
   end
   # def sentence(sentence)
   #   sentence.split.collect { |word| piglatinize_word(word) }.join(" ")
