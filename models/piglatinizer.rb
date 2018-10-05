@@ -9,7 +9,7 @@ class PigLatinizer
     binding.pry
   end
   
-  def piglatinize_consonants
+  def piglatinize_consonants(char)
     
   end
   # def sentence(sentence)
