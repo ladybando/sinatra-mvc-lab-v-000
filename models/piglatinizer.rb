@@ -5,7 +5,7 @@ class PigLatinizer
    piglatinize_vowels(word)
   end
 
-  def piglatinize_vowels(char)
+  def piglatinize_vowels(char) #char = "pork"
     binding.pry
   end
   # def sentence(sentence)
