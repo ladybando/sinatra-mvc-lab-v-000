@@ -14,7 +14,8 @@ class PigLatinizer
     binding.pry
     if !consonants(char)
       char = char + w
-    #char.split(//).slice(0).join("")
+    #char.split(//).slice(0).join(""),downcase #removes first letter and downcases it.
+    #will join first two letters with .join
   end
   
   def piglatinize_consonants(char)
