@@ -3,6 +3,7 @@ class PigLatinizer
 
   def piglatinize(word) #word = "pork"
    piglatinize_word(word)
+   sentence(word)
   end
 
   def piglatinize_word(word) #char = "pork"
