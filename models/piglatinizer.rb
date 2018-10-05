@@ -14,7 +14,7 @@ class PigLatinizer
     if !consonants(word[0])
       word = word + 'w'
 
-    if consonants(char[0..1])
+    elsif consonants(char[0..1])
     binding.pry
     else 
       char.concat(char.slice!(/^[^aeiou]*/i || ""))
