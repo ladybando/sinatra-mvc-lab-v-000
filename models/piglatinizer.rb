@@ -6,13 +6,13 @@ class PigLatinizer
   end
   
   
-  def consonants(char)
+  def consonant?(char)
     !char.match(/a e i o u/)
   end
   
   def piglatinize_word(word) #char = "pork"
    binding.pry
-    if !consonants(word[0])
+    if !consonant?(word[0])
       word = word + 'w'
     elsif consonants(word[0..1])
     #binding.pry
