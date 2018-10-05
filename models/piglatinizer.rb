@@ -15,7 +15,8 @@ class PigLatinizer
     if !consonants(char)
       char = char + 'w'
     elsif consonants(char[0..1])
-    char.concat()
+    binding.pry
+    #char.concat(char.split(//).slice)
     end
     #char.split(//).slice(0).join(""),downcase #removes first letter and downcases it
     #will join first two letters with .join
