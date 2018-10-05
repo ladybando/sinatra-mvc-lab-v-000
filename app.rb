@@ -5,7 +5,7 @@ class App < Sinatra::Base  get '/' do
   end
 
   post '/piglatinize' do
-   @pig_latin = params[:user_phrase]
+   #@pig_latin = params[:user_phrase]
    erb :results
   end
   
