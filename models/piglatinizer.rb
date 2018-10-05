@@ -11,7 +11,7 @@ class PigLatinizer
   end
   
   def piglatinize_vowels(char) #char = "pork"
-    if !consonants(char)
+    if !consonants(char[0])
       char = char + 'w'
     end
   end
