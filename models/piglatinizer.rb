@@ -9,8 +9,10 @@ class PigLatinizer
   def consonants(char)
     !char.match(/a e i o u/)
   end
+  
   def piglatinize_vowels(char) #char = "pork"
     binding.pry
+    if consonants(char)
     char.split(//).slice(0)
   end
   
