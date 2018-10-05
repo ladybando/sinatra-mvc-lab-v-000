@@ -18,7 +18,7 @@ class PigLatinizer
           elsif consonants.include?(word[0])
           word[1..-1] + word[0] + 'ay'
         else
-       word += ay # return unchanged
+       word += 'ay' # return unchanged
       end
    end
 
