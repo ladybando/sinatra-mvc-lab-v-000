@@ -14,7 +14,12 @@ class PigLatinizer
     #binding.pry
     if !consonants(char)
       char = char + 'w'
-    elsif consonants(char[0..1])
+    end
+
+  end
+  
+  def piglatinize_consonants(char)
+        elsif consonants(char[0..1])
     binding.pry
     else 
       char.concat(char.slice!(/^[^aeiou]*/i || ""))
@@ -22,10 +27,6 @@ class PigLatinizer
     end
     #char.split(//).slice(0).join(""),downcase #removes first letter and downcases it
     #will join first two letters with .join
-  end
-  
-  def piglatinize_consonants(char)
-    
   end
   # def sentence(sentence)
   #   sentence.split.collect { |word| piglatinize_word(word) }.join(" ")
