@@ -14,10 +14,10 @@ class PigLatinizer
     if !consonants(word[0])
       word = word + 'w'
 
-    elsif consonants(char[0..1])
+    elsif consonants(word[0..1])
     binding.pry
     else 
-      char.concat(char.slice!(/^[^aeiou]*/i || ""))
+      word.concat(word.slice!(/^[^aeiou]*/i || ""))
     end
     #char.split(//).slice(0).join(""),downcase #removes first letter and downcases it
     #will join first two letters with .join
